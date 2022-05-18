@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Day Off Generator</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="index.css">
+        
+    </head>
+    <body>
+        <img src="img/logo.svg" id="logo_img"/><br/>
+
+        <!-- <div id="name_box">
+            <span id="char_name">姓名：</span><input id="input_name" type="text"><button id="btn_char_support" type="button">!</button>
+        </div> -->
+
+        <div id="flex_container">
+            <input id="input_year" class="year" type="text"><span id="char_year" class="year">年</span>
+            <input id="input_month" class="month" type="text"><span id="char_month" class="month">月</span>
+            <input id="input_date" class="date" type="text"><span id="char_date" class="date">日</span>
+            
+        </div>
+        <button type="button" onclick="btn_down()" id="btn">Take a day off!</button>
+
+        <div id="log"></div>
+        
+        <!-- 原圖為 width="1460" height="917" -->
+        <canvas id="canvas" width="1460" height="917"></canvas>
+    </body>
+    <footer>
+        <br/>
+        <hr/>
+        <p id="sign">By ByJY</p>
+        <br/>
+    </footer>
+    
+    <script src="main.js"></script>
+    <script src="preloadImg.js"></script>
+    <script src="Year.js"></script>
+    <script src="Month.js"></script>
+    <script src="Date.js"></script>
+    <script src="input.js"></script>
+</html>

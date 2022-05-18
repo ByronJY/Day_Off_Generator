@@ -1,0 +1,1 @@
+const char_img_path = "img/char/";
